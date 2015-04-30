@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form>
+    <br>
+    <h2 style="background-color: #8d6590; color: #eceeff; display: inline-block; padding: 5px;  
+}">Add a Notes to My Notes</h2>
+</br>
+    <input type="text" name="notes">
+    {% if items %}
+    	{% for item in items %}
+    		<input type="hidden" name="notes" value="{{item}}" size="40">
+    	{% endfor %}
+    {% endif %}
+    
+    <button>Add</button>
+
+    {% if items %}
+    <br>
+    <br>
+
+    <h3 style="background-color: #8cc63f; color: #eceeff; display: inline-block; padding: 5px; 
+}">Guest Notes List</h3>
+    <ul>
+    	{% for item in items %}
+    		<li>{{ item | safe}}</li>
+    	{% endfor %}
+    </ul>
+    {% endif %}
+ {% endblock %}
+</form>
