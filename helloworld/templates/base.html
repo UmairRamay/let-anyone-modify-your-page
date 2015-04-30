@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Umair Ramay Notes</title>
+	<style>
+
+/*Main Body Positioning */
+body {
+	padding: 20px 10px;
+	font-family: arial;
+	max-width: 960px;
+	margin: 5px auto;
+	font-size: 16px;
+} 
+
+/*Text FONT Custom*/
+h1 {
+	text-align: center;
+	color: #FF0000;
+}
+
+h2 {
+	margin: 20px;
+	color: black;
+	text-align: center;
+}
+
+
+p{
+	margin: 10px auto 5px auto;
+}
+
+ol {
+	list-style-type: none;
+	color: #FF6600;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*Remove a href color*/
+li a{
+color: #FF6600;
+
+}
+
+li {
+	font-size: 20px;
+	line-height: 35px; 
+	list-style-type: none;
+}
+
+/*Main NanoNotes Container DIV*/
+.nanonotes {
+	background-color: #FF9900;
+	color: white;
+	padding: 10px;
+	margin: 20px 20px;
+}
+
+.lessonbox {
+	background-color: #FF6633;
+	padding: 4px;
+	margin: 10px;
+}
+
+.lessonsubheading {
+	font-size: 28px;
+	margin: 10px;
+	text-align: center;
+}
+
+.listspan {
+	color : black;
+	font-weight: bold;
+}
+
+/*This is Default CSS Settings*/
+article { 
+    display: block;
+}
+
+
+/*This for Code Examples*/
+
+.boxcode{
+	font-family: Courier;
+	background-color: black;
+	padding: 5px 8px;
+	display: inline-block;
+}
+/*This for Code Intendation to Left*/
+
+.intendcode {
+	margin-left: 38px;
+}
+
+/*This for Content Titles*/
+.contentHeads {
+	font-weight: bold;
+	color: green;
+}
+	</style>
+
+</head>
+<body>
+	<h1 style="backgrond-color: #ddd; color: #008fc5; margin: 0 height: 50px">
+			Umair Ramay Notes
+		</h1>
+		{% block content %}
+		{% endblock %}
+	<header>
+	<!--Main Navigation of the Content-->
+		<div id="maincontent">
+		<ol>
+			<!--Stage 1-->
+			<li><a href="#Stage1" class="contentHeads">Stage 1: Submit Make Your Webpage</a></li>
+
+			<ol>
+				<li><a href="#Stage1">Lesson 1: The Basics of the Web and HTML</a>
+					<ul><!--S1 Mean = Stage 1-->
+						<li><a href="#S1_lesson1box1">What is HTML</a></li>
+						<li><a href="#S1_lesson1box2">HTML Tags/Elements</a></li>
+						<li><a href="#S1_lesson1box3">How HTTP Work</a></li>
+						<li><a href="#S1_lesson1box4">Computers are Really Stupid and Humans are Smart</a></li>
+						<li><a href="#S1_lesson1box5">What is the Difference Between Inline and Block Elements</a></li>
+					</ul>
+				</li>
+				<li><a href="#Stage1lesson2">Lesson 2: Creating a Structured Document with HTML</a>
+					<ul>
+						<li><a href="#S1_lesson2box1">Tree Structure</a></li>
+						<li><a href="#S1_lesson2box2">HTML and Boxes</a></li>
+						<li><a href="#S1_lesson2box3">Which are the Best Text Editors</a></li>
+					</ul>
+				</li>
+				<li><a href="#Stage1lesson3">Lesson 3: Adding CSS Style to HTML Structure</a>
+					<ul>
+						<li><a href="#S1_lesson3box1">What is Repetition</a></li>
+						<li><a href="#S1_lesson3box2">Why CSS is Sexy</a></li>
+					</ul>
+				</li>
+			</ol>
+			<!--Stage 2-->
+			<li><a href="#Stage2" class="contentHeads">Stage 2 Intro: Automate Your Page</a></li>
+			<ol>
+				<li><a href="#Stage2lesson1">Lesson 1: Introduction to Real Serious Programming</a>
+					<ul>
+						<li><a href="#2lesson1box1">Computer</a></li>
+						<li><a href="#2lesson1box2">ENIAC - The World First Computer</a></li>
+						<li><a href="#2lesson1box3">What is Computer Science</a></li>
+						<li><a href="#2lesson1box4">What is Python</a></li>
+						<li><a href="#2lesson1box5">What is the Difference Between Inline and Block Elements</a></li>
+					</ul>
+				</li>
+				<li><a href="#Stage2lesson2">Lesson 2: Variables and Strings</a>
+					<ul>
+						<li><a href="#2lesson2box1">Variables in Python and What are They</a></li>
+						<li><a href="#2lesson2box2">Equals Sign Myths</a></li>
+						<li><a href="#2lesson2box3">Why Do We Use Variables and Its is Usefulness</a></li>
+						<li><a href="#2lesson2box4">Strings VS Numbers</a></li>
+					</ul>
+				</li>
+				<li><a href="#Stage2lesson3">Lesson 3: Input -> Function -> Output</a>
+					<ul>
+						<li><a href="#2lesson3box1">What is a Function</a></li>
+						<li><a href="#2lesson3box2">Making vs Using a Function</a></li>
+						<li><a href="#2lesson3box3">Functions Benefits</a></li>
+						<li><a href="#2lesson3box4">With Out No Return Statement</a></li>
+					</ul>
+				</li>
+			</ol>
+			<!--Stage 3-->
+			<li><a href="#Stage3" class="contentHeads">Stage 3 Add Videos to Your Page</a>
+			<ol>
+				<li><a href="#Stage3lesson1">Introduction to OOP</a>
+					<ul>
+						<li><a href="#3lesson1box1">What is OOP</a></li>
+						<li><a href="#3lesson1box2">The Importance of Validating Input</a></li>
+						<li><a href="#3lesson1box3">Abstract Thinking OOP</a></li>
+					
+					</ul>
+				</li>
+			</ol>
+			<!--Stage 4-->
+			<li><a href="#Stage4" class="contentHeads">Stage 4 Let Anyone Modify Your Page</a>
+			<ol>
+				<li><a href="#Stage4lesson1">Introduction to Servers</a>
+					<ul>
+						<li><a href="#4lesson1box1">What is Servers</a></li>
+						<li><a href="#4lesson1box2">The Importance of Validating Input</a></li>
+						<li><a href="#4lesson1box3">HTML Templates and Abstraction</a></li>
+					
+					</ul>
+				</li>
+			</ol>
+		</ol>
+		<!--End of the Main Navigation of the Content-->	
+		</div>
+	</header>
+<h1 id="Stage1" class="contentHeads">Stage 1: Submit Make Your Webpage</h1>
+<!--Stage 1 - Lesson 1- First Box in Which thhe Content Will Go In.--> 
+<div class="nanonotes">
+<article>
+	<h2 id="Stage1lesson">Lesson 1: The Basics of the Web and HTML</h2>
+
+	<div class="lessonbox" id="S1_lesson1box1">
+		<h3 class="lessonsubheading">What is HTML</h3>
+	<!--Stage 1 - Lesson 1 Content-->
+		<div class="nano_des">
+		<p>HTML Stand for Hyper Transfer Markup Text and it is Use to Link Multiples Documents Togethers.</p>
+		<p><span class="listspan">World Wide Web Consortium</span> Website for HTML Documentation <a href="http://www.w3.org/">W3C</a> for Guideline on it.</p>
+		<p>HTML Use Markup Tags to Descibe the Web Page Content</p>
+		</div>
+	</div>
+
+	<!--Stage 1 - Lesson 1 Content-->
+	<div class="lessonbox" id="S1_lesson1box2">
+		<h3 class="lessonsubheading">HTML Tags/Elements</h3>
+
+		<div class="nano_des">
+		<p>HTML Tags Made of 2 Tags Which Equal to 1 Single Element But This is Not Always the Case. 
+		Sometime 1 Single Element is Made Up of Single Opening Tag and No Closing Tag (Void Tag).</p>
+		</div>
+			</div>
+	<!--Stage 1 - Lesson 1 Content-->	
+	<div class="lessonbox" id="S1_lesson1box3">
+		<h3 class="lessonsubheading">How HTTP Work</h3>
+
+		<div class="nano_des">
+		<p><em>HTTP</em> stand for <b><a href="http://searchnetworking.techtarget.com/definition/port-80">Hypertext Transfer Protocol</a></b> Which Work on Port 80 OF TCP/IP.</p>
+		</div>
+	</div>
+	<!--Stage 1 - Lesson 1 Content-->
+	<div class="lessonbox" id="S1_lesson1box4">
+		<h3 class="lessonsubheading">Computers are Really Stupid and Humans are Smart</h3>
+
+		<div class="nano_des">
+		<p>Computers Don't Know to How to Correct a Simple Tag Error Where Humans Can Correct it.</p>
+		<p>Computers Need Instructions to Know What to Do and What Not to Do.</p>
+		</div>
+	</div>
+
+	<!--Stage 1 - Lesson 1 Content-->
+	<div class="lessonbox" id="S1_lesson1box5">
+		<h3 class="lessonsubheading">What is the Difference Between Inline and Block Elements.</h3>
+
+		<div class="nano_des">
+		<p><em><b>Inline</b></em> Mean They Don't Start a New Line to Use it and also Inline Elements are Normally Displayed Without Line Breaks.</p>
+		<p><em><b>Block</b></em> Mean They are a New Line Block of Code Which Have a Start and a End to it.</p>
+		</div>
+	</div>
+</article>
+</div> 
+
+<!--Lesson 2 -Second Box in Which the Content Will Go In--> 
+<div class="nanonotes">
+<article>
+	<h2 id="Stage1lesson2">Lesson 2: Creating a Structured Document with HTML</h2>
+	<!--Stage 1 - Lesson 2 Content-->
+	<div class="lessonbox" id="S1_lesson2box1">
+		<h3 class="lessonsubheading">Tree Structure</h3>
+		<div class="nano_des">
+		<p>Tree Structure is Foundation of Building Complex Web Applications</p>
+		<p>You Can Nest Things Togerther to Go Toward a Tree Which Can Lead from <em>H2</em> to <em>Span</em> than it Open a New Tree Brunch with in the <em>Span</em> Tree Brunch,ect.</p>
+		<p>The Import Point is <em>Div</em> are the Foundations Root of the Tree Which Can Grow into Multiple <em>Tree Brunches</em></p>
+		</div>
+	</div>
+	<!--Stage 1 - Lesson 2 Content-->
+	<div class="lessonbox" id="S1_lesson2box2">
+		<h3 class="lessonsubheading">HTML and Boxes</h3>
+		<div class="nano_des">
+		<p>Tree Structurera is Foundation of Building Complex Web Applications</p>
+		<p>Boxes in HTML is a Very Sright Forward Because Everything in <b>HTML</b> is Box Even the Circular Image is a Box</P>
+		<p>Inside the Box the Content Appear Like Text, Images,etc</p>
+		<p><em><a href="http://www.w3schools.com/css/css_boxmodel.asp">Box</a></em> is Very Closly Related to <em>CSS</em>.</p>
+		</div>
+	</div>
+	<!--Stage 1 - Lesson 2 Content-->
+	<div class="lessonbox" id="S1_lesson2box3">
+		<h3 class="lessonsubheading">Which are the Best Text Editors</h3>
+		<div class="nano_des">
+		<p>The Best Text Editor for Industrail Standard is <b>Dreamweaver</b> But The Learning Cruve is Very and It Over Kill the Process for HTML and CSS Coding.
+		<p>For Quick Coding the Editor is <b>Notepad++</b> But If You Want to Open 2 Tabs of Code in the Same Editor than <b>Sublime Test</b> is the Winner</p>
+		</div>
+	</div>
+</article>
+</div>	
+	<!--Lesson 3  - Thrid Box in Which thhe Content Will Go for Lesson 3--> 
+<div class="nanonotes">
+<article>
+		<h2 id="Stage1lesson3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+	<!--Stage 1 - Lesson 3 Content-->
+	<div class="lessonbox" id="S1_lesson3box1">
+		<h3 class="lessonsubheading">What is Repetition</h3>
+		<div class="nano_des">
+		<p>Repetition is Reapting the Same Stuff Again and Again Which Make a Process Complex and How of Conrol.</p>
+		<p>In Programming Repetition Mean Bad Code Which Lead Error and Bugs</p>
+		<p>For Example if You are Using the Same <b>Div Class</b> All Over the HTML Page With Not Control in CSS than it Become Repetiton</p>
+		<p>This <span class="listspan">Stack Over Flow</span> Provide Very Good <a href="http://stackoverflow.com/questions/15374830/stop-repetition-of-css-code">Answers</a> to Repetition</p>
+		</div>
+	</div>
+	<!--Stage 1 - Lesson 3 Content-->
+	<div class="lessonbox" id="S1_lesson3box2">
+		<h3 class="lessonsubheading">Why CSS is Sexy</h3>
+		<div class="nano_des">
+		<p><b>HTML</b> Page is Boring Without Any Feelings But <b>CSS</b> Which is an Aynorm of <b>Cascading Style Sheets</b> Which Control the Presentation of the Web</p>
+		<p>CSS Give a HTML Document Vibrant Color But Also the <b>Font (Size, Type, Thickness,etc)</b> to HTML Plus it Control the <b>Layout</b> of How the Web Page WilL look</p>
+		<p>Important Point to Remember Without <b>CSS</b> the Web Page Look Ugly But Also Harder to Layout the Structure with <b>Margin</b> or <b>Padding</b> CSS Propites.</p>
+		</div>
+	</div>
+</article>
+</div>
+
+
+
+<!--Project 2 Notes-->
+<!--Lesson 1 -First Box in Which the Content Will Go In--> 
+<h1 id="Stage2" class="contentHeads">Stage 2 Intro: Automate Your Page</h1>
+<!--First Box in Which thhe Content Will Go for Lesson 1 of Project 2--> 
+<div class="nanonotes">
+<article>
+	<h2 id="Stage2lesson1">Lesson 1: Introduction to Real Serious Programming</h2>
+
+	<div class="lessonbox" id="2lesson1box1">
+		<h3 class="lessonsubheading" id="#2lesson1box1">Computer</h3>
+	<!--Stage 2 - Lesson 1 Content-->
+		<div class="nano_des">
+		<p>Computer's Need <i>Specific Sequence of Istructions</i> to Anything That Why They are <b>Smart</b> But With Out Any <b>Istructions(Code)</b> They are Useless.</p>
+		<p>We All Love the Wonder's of an Bread <b>Toster</b> But it is Not Smart as a Compuer Because it is Only Design for a Specific Task Which is <b>Tosting Bread's</b>.</p>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 1 Content-->
+	<div class="lessonbox" id="2lesson1box2">
+		<h3 class="lessonsubheading">ENIAC - The World First Computer</h3>
+		<div class="nano_des">
+		<p><a href="http://en.wikipedia.org/wiki/ENIAC">ENIAC</a> Was World First Usable <b>Electronic Computer</b> and it was Launched in 1946</p>
+		<p>ENIAC Contained about 18,000 Vacuum Tubes and the Size of <b>ENIAC</b> Was Over a Large Room Which is Filled With.</p>
+
+		</div>
+			</div>
+	<!--Stage 2 - Lesson 1 Content-->
+	<div class="lessonbox" id="2lesson1box3">
+		<h3 class="lessonsubheading">What is Computer Science</h3>
+
+		<div class="nano_des">
+		<p><b>Computer Science</b> is the Science Which Deals With the Theory and the Methods of Processing Infomation in <b>Digital Computer's</b>, The Design of the Computer <b>Hardware and Software</b> and the <b>Application</b> of the Computer's</p>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 1 Content-->
+	<div class="lessonbox" id="2lesson1box4">
+		<h3 class="lessonsubheading">What is Python</h3>
+
+		<div class="nano_des">
+		<p>Python is the Deadly Snack in the World But We Want to Know What Really is Python Programming Language</p>
+		<p>Python Was Created Back in 1991 <em>By Guido van Rossum</em> as a General Purpose Programming Language</p>
+		<p>Python Interpreter is Use to Interpert the Python Code Which We Click Run and the Python Code Runs
+		</div>
+	</div>
+
+	<!--Stage 2 - Lesson 1 Content-->
+	<div class="lessonbox" id="2lesson1box5">
+		<h3 class="lessonsubheading">What is the Difference Between Inline and Block Elements.</h3>
+
+		<div class="nano_des">
+		<p><span class="listspan">Python Expressions</span> Which are the Command We Want Python Interperter to Do Like <span class="listspan">print +</span> or like <span class="listspan">print 2 + 2</span> Which Will Do the Calculation.</p>
+		<p><a href="https://www.youtube.com/watch?v=ZdDOauFIDkw">This Regular Expressions Video</a> Explain about the Regular Expressions of the Python Language.
+		</p>
+		</div>
+	</div>
+</article>
+</div> 
+
+<!--Lesson 2 - Stage 2 Content--> 
+<div class="nanonotes">
+<article>
+	<h2 id="Stage2lesson2">Lesson 2: Variables and Strings</h2>
+	<!--Stage 2 - Lesson 1 Content-->
+	<div class="lessonbox" id="2lesson2box1">
+		<h3 class="lessonsubheading">Variables in Python and What are They</h3>
+		<div class="nano_des">
+		<p>Variables are Just Like Shoe Box Where You Store Your Stuff and Mark a Variable the Same Way You Mark on the Shoe Box So Latter You Can Find the Stuff Which You Store in Shoe Box or Know as Variable</p>
+		<p><span class="listspan">Laptop = Acer</span> is Variable Because <span class="listspan">Laptop</span> is a Box Which in Which We are Puting the Laptop Brand <span class="listspan">Acer</span> So It Become a Varible</p>
+		<p>Another Way to See <em>Varibles</em> as Jar in Which You Store Cookies But You Have 3 Type Cookies Like Chocolate Cookies, Buttar Cookies and Fruit Cookies So You Will Store Both 3 Types of Cookies in 3 Jar with Assigning the Name on the Top of The Jar Like </p>
+		<p><span class="listspan">Jar1 = "Chocolate Cookies"</span>
+		<p><span class="listspan">Jar2 = "Buttar Cookies"</span>
+		<p><span class="listspan">Jar3 = "Fruit Cookies"</span>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 2 Content-->
+	<div class="lessonbox" id="2lesson2box2">
+		<h3 class="lessonsubheading">Equals Sign Myths</h3>
+		<div class="nano_des">
+		<p>We are So Much Familar with the Great <span class="listspan">= </span> sign that We Get it Wrong in the Programming Word.</p>
+		<p><span class="listspan">10 + 10 = 20</span> This Mean the Output of Our Computation is <span class="listspan">20</span> But This is the Case with the Varibles.</p>
+		<p><span class="listspan">My_Laptop = Acer</span> Don't Mean <span class="listspan">My_Laptop</span> Equals to <span class="listspan">Acer</span> But it Mean <span class="listspan">Acer</span> is assign to Varible <span class="listspan">My_Laptop</span></p>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 2 Content-->
+	<div class="lessonbox" id="2lesson2box3">
+		<h3 class="lessonsubheading">Why Do We Use Variables and Its is Usefulness</h3>
+
+		<div class="nano_des">
+		<p>Like an Electronic Engineer Which He Store All the Game Electronic Components in a Multiples Cases for Different Components and He Want to Find a Specfic Componet than He Will Try to Find the Case With the Name Written of the Componet on the Top of the Case</p>
+		<p>Lets Make the Storage Cases as a <span class="listspan">Varibles</span> to Store the <span class="listspan">Electronic Components</span> But With Out Storing Them Rather Put all the Multiples Electronic Components in a Big Box Will Make Hard for the Electronic Engineer to Find the Specfic Componet Which is Searching For.</p>
+		<p>Varibles Not Only Store Inforamtion But Also Organize Our Code How to Assign a Varible and Latter Use in Our Code Which is Make Our Code Much Easier to Read</p>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 2 Content-->
+	<div class="lessonbox" id="2lesson2box4">
+		<h3 class="lessonsubheading">Strings VS Numbers</h3>
+
+		<div class="nano_des">
+		<p><span class="listspan">"999"</span> vs <span class="listspan">999</span> We Can't See Any Diffirence Rather than the Quotation Mark</p>
+		<p>The <span class="listspan">"999"</span> in the Quotation Mark is a String Which is Like Nine Hundred Ninety Nine <b>String</b></p>
+		<p>The <span class="listspan">999</span> withOut Quotation Mark is a Raw Number Which Mean it is a Mathematic <b>Integer</b></p>
+		</div>
+	</div>
+</article>
+</div> 
+
+<!--Lesson 3 - Stage 2 Content--> 
+<div class="nanonotes">
+<article>
+	<h2 id="Stage2lesson3">Lesson 3: Input -> Function -> Output</h2>
+
+	<div class="lessonbox" id="2lesson3box1">
+		<h3 class="lessonsubheading">What is a Function</h3>
+	<!--Stage 2 - Lesson 1 Content-->
+		<div class="nano_des">
+		<p>Function is a an operation which take an Input and OutPut the Result According to Our Given Parameters</p>
+		<p><span class="listspan">def compute():</span> is a Function Which Can the Parameters in the ()</p>
+		<p>Funntions are <a href="http://en.wikibooks.org/wiki/Python_Programming/Functions">Object's Which Have Classes</a></p>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 3 Content-->
+	<div class="lessonbox" id="2lesson3box2">
+		<h3 class="lessonsubheading">Making vs Using a Function</h3>
+		<div class="nano_des">
+		<p>Funtions are Define with <span class="listspan">def</span> Keyword and with the Function Name Like <b>compute</b> and Parentheses ().</p>
+		<p>In the () Parentheses You Pass the Parameters Which is an Input.</p>
+ 		<p>Example:
+ 			<!--Function Block of CODE-->
+ 			<div class="boxcode">
+            def compute(number);<br>
+            	<span class="intendcode">computation = number  * number</span><br>
+            	<span class="intendcode">return computation</span><br>
+            </div>
+         <p>Using the <b>Funtion</b> Which We Defin is Very Easy, Just <span class="listspan">print</span> the Function</p>
+         	<!--Function Block of CODE-->
+         	<div class="boxcode">
+           	<p>print compute(2)</p>
+          	<p>>>>4</p>
+            </div>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 3 Content-->
+	<div class="lessonbox" id="2lesson3box3">
+		<h3 class="lessonsubheading">Functions Benefits</h3>
+
+		<div class="nano_des">
+		<p>Functions are Ones Define and You Can Reuse As Many Times You Like in Your Code Which Give an Edge to an Programmer to Build Complex Applications</p>
+		</div>
+	</div>
+	<!--Stage 2 - Lesson 3 Content-->
+	<div class="lessonbox" id="2lesson3box4">
+		<h3 class="lessonsubheading">With Out No Return Statement</h3>
+
+		<div class="nano_des">
+		<p>With Out the <span class="listspan">return</span> Statement the Funtion Don't Know What to Do So it Will Output <b>None</b>
+		<p>For Any Computation a <span class="listspan">return</span> Statement is Must to Get Back the Result of Your Computation</p>
+	</div>
+	
+</article>
+</div>
+
+
+<!--Project 3 Notes-->
+<h1 id="Stage3">Stage 3 Add Videos to Your Page</h1>
+<div class="nanonotes">
+<article>
+<h2 id="Stage3lesson1">Introduction to OOP</h2>
+<div class="lessonbox" id="3lesson1box1">
+	<!--Stage 3 - Lesson 1 Content-->
+	<h3 class="lessonsubheading">What is OOP</h3>
+			 	
+		<div class="nano_des">
+		<p>OOP Stand for <em>Object Oriented Programming</em> and Object is a Thing and Thing Can Be 
+		any Thing Like a Laptop Which is an Object and The Brand <em>Acer</em> is the Class of an Ojecct.</p>
+		<p>Object's Like <b>Lego Bricks</b> Which is Package of Functions ,Libray Which We Can Reuse Over and Over in Our Code.</p>
+		<p>Object Oriented Object's are an Idea's that Form into <em>Abstraction</em> and Let Start Defining the Laptop into OOP Concept</p>
+		<p>OOP Start with Class Which is the Blueprint of Creating Something.</p>
+		<p>Class is the Label Which You Want to Label Like a Gaming Laptop, Slim-Laptop and Businee Laptop.</p>
+		<P>We Have a Laptop Which is Acer and We Put the Acer Laptop in a <span class="listspan">acer class</span> than We Have another Laptop Called HP and We Put it in <span class="listspan">HP class</span> and We Have a Acer Mobile and We Will Put the Acer Mobile in the <span class="listspan">acer Class</span> and This is Where <em>OOP</em> Get Started Because We are Not Creating a 2 Diffrenct Class for a Same Brand But Difference Like a Laptop and Mobile</p>
+		<p>For Example</p>
+		<!--Function Block of CODE-->
+ 			<div class="boxcode">
+ 				<p>Classes: These are Same Brands Classes<br>
+ 				<span class="intendcode">acer = Acer Laptop</span><br>
+ 				<span class="intendcode">Acer Mobile</span><br>
+ 				<br>
+ 				<span class="intendcode">hp = HP Laptop</span><br>
+ 			</div>
+ 		<p>We are Using the Same <span class="listspan">acer Class</span> for Both the Laptop and Mobile Becuase are the Same Brand - THis is Called Inheritance.
+ 		<p>Inheritance is That You are Inheriting Some From Above Which Mean a Super Class and acer is our Brand Super Class for Acer Prodcuts.</p>
+		<p>
+		<p>The Fundamentals Concepts of OOP include Class, Object, Methd, Abstraction,etc.</p>
+		</div>
+	</div>
+	<!--Stage 3 - Lesson 1 Content-->
+<div class="lessonbox" id="3lesson1box2">
+		<h3 class="lessonsubheading">OOP Vocabulary</h3>
+
+		<div class="nano_des">
+		<p>In Non-OOP Programming You Will Keep Code and Data Different and They are Not Connected</p>
+		<!--Function Block of CODE-->
+			<div class="boxcode">
+ 				<p>Units of Code = Functions</p><br>
+ 				<p>Units of Data = Sructures</p>
+ 			</div>
+ 		<p>This is How the Case is in OOP Because Code and Data is Merge in to One Thing Which is an Object</p>
+ 		<p>This is Where Abstraction Take Place Because We Don't Know What is Happing Behind the Scence , if We Try to Break the Object than Out Software Will Be Break</p>
+ 		<p>In the Acer Object Which is the Object of Laptop Object Class and If We Try to Muniplate that Objects in a <em>Standard Library</em> and Try Look the Hidden Code Which Shouldn't We Be Looking than Our Software Will Break.
+ 		<p>A Class Can Be Define also as Feature's of an Object Like an Car</p>
+ 		<p>Feature's of an Car Can Include:
+ 			<!--Function Block of CODE-->
+			<div class="boxcode">
+ 				<p>Attributes</p>
+ 				<span class="intendcode">= Properties</span>
+
+ 				<p>Behaviors</p>
+ 				<span class="intendcode">= Methods</span>
+ 			</div>
+ 		<p>Attributes Can Given to an CAR</p>
+ 		<!--Function Block of CODE-->
+			<div class="boxcode">
+ 				<p>CAR</p>
+ 				<hr>
+ 				<p>Year</p>
+ 				<p>Brand</p>
+ 				<p>Model Number</p>
+ 				<p>Color</p>	
+		</div>
+		<p>Menthods (Behaviors) Given to an CAR</p>
+ 		<!--Function Block of CODE-->
+			<div class="boxcode">
+ 				<p>CAR</p>
+ 				<hr>
+ 				<p>Engine On<p>
+ 				<p>Engine Off</p>
+ 				<p>Brake</p>
+ 				<p>Gears</p>	
+			</div>
+	</div>
+</div>	
+`<!--Stage 3 - Lesson 1 Content-->
+<div class="lessonbox" id="3lesson1box3">
+		<h3 class="lessonsubheading">Abstract Thinking OOP</h3>
+
+		<div class="nano_des">
+
+		<p>Object is an <span class="listspan">instance</span> of an <b>Class</b></p>
+		<p>A <span class="listspan">Method</span> is an Behavior of Class Like an CAR Example Above and With in a Program a <span class="listspan">Method</span> Affects One Object</p>
+		<p><span class="listspan">Inheritance</span> or You Call Sub-Class of an Super Class Which is Parent Class, Like Toyota and Suzuki will have the Same <span class="listspan">Class car</span> Which They Will Inhertit from.</p>
+		<p><span class="listspan">Abstraction</span>is Hard to Understand But it is an Practice of Reducing Details and Focus On One or Fews Concepts at a Time</p> 
+		<p><span class="listspan">Module</span> is a Hidden Box from Us But We Interacts with it When Want to import Some Function But We Really Don't Know What Happing the Box (Module) But Modules are Classes Which are Boxes to Store the Methods and Attributes</P>
+		<p><span class="listspan">Library</span> Stores the Module's Which Have the Functions We Don't Need But When We Need Than We Have to Revoke the Funtion by the importing the Library in Which it Have the Function Like <span class="listspan">webbrower</span> is Library which have a Very Usefull Function<span class="listspan">def open()</span> which is Use to open a link in the Web Browser</p>
+		<p><a href="https://docs.python.org/3.3/library/">Python Standard Library</a> is the Gold Mine of Functions But Why We Don't Have all the Functions in the Built-in Library of Python So We Don't Have to Import and The Answer is the Speed and Memory Because We Only import the Library Which We Want to Use Which Keeep the Memory in Low Uasge and Performance of the Python Script Fasters.</p>
+		<p>HTML ID Which Can Be Use Only One is Not an Object Which We Created and It Can Be Use Only Ones But HTML Class is an True Object In a Sense We Can Use it Multiple Times and Control it Via CSS</p>
+		<p>Reusing the Class Attribute Give as an Edge to Control the Code and Reuse When Ever We Like in Our HTML Dcoument</p>
+		</div>
+</div>
+	
+</article>
+</div> 
+<!--Project 4 Notes-->
+<h1 id="Stage4">Stage 4 Let Anyone Modify Your Page</h1>
+<div class="nanonotes">
+<article>
+<h2 id="Stage4lesson1">Introduction to Servers</h2>
+<div class="lessonbox" id="4lesson1box1">
+	<!--Stage 4 - Lesson 1 Content-->
+	<h3 class="lessonsubheading">What is Servers</h3>
+			 	
+		<div class="nano_des">
+		<p>Cilent Which is the User Send a <span class="listspan">GET</span> Request to the Sever for an Webpage and the Server Get the Request Back to the Cilent Web Browser But If the User Want to Add or Get New Informtion than Again the Cilent Request is Send to the Server and the Server Update the HTML Document on the Cilent Side.
+		<p>How Cilent and Server Talk:</p>
+		<!--Function Block of CODE-->
+ 			<div class="boxcode">
+ 				<p>Cilent Send GET Request<br><br>
+ 				<span class="intendcode">Server Give Requested HTML Page</span><br>
+ 				<p>Cilent Enter Data in POST<br><br>
+ 				<span class="intendcode">Server Update the HTML Page</span><br>
+ 				<br>
+ 				
+ 			</div>
+ 		<p>Cilent Send the Request on <span class="listspan">http://:</span> Which is on Port 80 of TCP/IP Port and Request and Web Page on His Web Browser Which is Cilent from the Server Side.</p>
+ 		<p>This Awesome Article Explain <a href="http://www.quackit.com/web_servers/tutorial/how_web_servers_work.cfm">How Web Servers Work</a></p>
+		</div>
+	</div>
+	<!--Stage 4 - Lesson 1 Content-->
+<div class="lessonbox" id="4lesson1box2">
+		<h3 class="lessonsubheading">The Importance of Validating Input</h3>
+
+		<div class="nano_des">
+		<p>In Today World Security is Main Aspect of How to Keep Your Web Running Becuase Nows a Days Any One Can Insert SQL Injections On Any Website.</p>
+		<p>A Website with any User Input Functionality Can Be Compromise By Any Bad Hacker or An Bad User with Puting JavaScript Code or An Script in the Input Section Like a Form for User's to Add the Data But if the If Data is Script to Gain Acess Inside the Website than Its a Big Security Loop Hole.
+		<p>To Solve this Problem We Use Escaping Feature in the Python Script But Still the User Can Find Out Some Orthers Way to Enter and Gain Acess to Website Database.</p>
+		<p>We Limit the Amount of the Data an User Can Enter and for Rest of the Data We Dump it Which is Bad Data.</p>
+	</div>	
+</div>	
+`<!--Stage 4 - Lesson 1 Content-->
+<div class="lessonbox" id="4lesson1box3">
+		<h3 class="lessonsubheading">HTML Templates and Abstraction</h3>
+
+		<div class="nano_des">
+
+		<p>The Web Developer Job is to Write Less Clean Code and Above All Avoid Repetition Because Repetition Makee Code Ugly and Hard Read andlso Hard to Maintain Over Time But the Solution to Avoid Making Content Such as <span class="listspan">Header</span> and <span class="listspan">Footer</span> on EveryPage.</p>
+		<p>Templates are the Solution Which Mean You Have to Write the Code One for  <span class="listspan">Header</span> and <span class="listspan">Footer</span> and It Will Appear on Every Page Generated Under the Main Template.</p>
+		<p>The Body Which Will Be Unqie of Every Web Page and it Will Insert into the Main Template Which already have the <span class="listspan">Header</span> in it.</p>
+		<!--Function Block of CODE-->
+ 			<div class="boxcode">
+ 				<p>Header</p><br><br><br><br><br>
+ 				<p>Body</p><br><br><br><br><br>
+
+ 				<p>Footer</p>
+ 				<br>
+ 				
+ 			</div>
+ 		<p>Templates are Very Usefull in a Blog Where the Overall Layout Remain the Same of the Blog But a New Body is Insert in a New Web Page Like <span class="listspan">/?id=51</span>
+ 		<p>Templates are Can Be 2 Componet or Can 4 or As Many Like Placing the <span class="listspan">Header</span> and <span class="listspan">Footer</span> in a HTML FIle and Add All Together Like a Lego Bricks. <span class="listspan">Main HTML Structure + Header + Unique Body + Footer</span>
+ 		<p>The Worst Most Blogging Software <a href="https://wordpress.org">WordPress</a> is Build on the Templating Thmese So When the User Create a BLOG Post and It Insert in the Main Blog But Not Only Wordpres , Any Other <b>CMS</b> Which Staend for <span class"listspan">Content Management System</span> are Base Templates to Generate the New Content Add By the User Dynamically on the Go With Helo of the Server<P>
+</div>
+	
+</article>
+
+</body>
